@@ -1,0 +1,36 @@
+{
+  "name": "blog-list",
+  "version": "1.0.0",
+  "description": "a blog list application, that allows users to save information about interesting blogs they have stumbled across on the internet. For each listed blog we will save the author, title, URL, and amount of upvotes from users of the application.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmankan/fso-part4.git#blog-list"
+  },
+  "keywords": [
+    "blog",
+    "list",
+    "nodejs",
+    "express"
+  ],
+  "author": "mk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kmankan/fso-part4/issues"
+  },
+  "homepage": "https://github.com/kmankan/fso-part4/tree/blog-list#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
