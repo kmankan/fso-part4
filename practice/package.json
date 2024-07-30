@@ -1,0 +1,30 @@
+{
+  "name": "phonebook-nodejs",
+  "version": "1.0.0",
+  "description": "basic phonebook app with node.js backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build:ui": "rm -rf dist && cd frontend/the-phonebook && pwd && npm run build && cp -r dist ../../",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "author": "kmankan",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.7.0",
+    "@stylistic/eslint-plugin-js": "^2.3.0",
+    "eslint": "^9.7.0",
+    "globals": "^15.8.0",
+    "nodemon": "^3.1.4"
+  }
+}
